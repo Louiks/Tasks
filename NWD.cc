@@ -14,18 +14,12 @@ void xD(int x, int y)
 
 }    
 
-void myFunc(int x, int y, int b)
+void myFunc(int x, int y)
 {
-   
-    if (x % y)
+    while (x % y != 0)
     {
-        b = x % y;
-        y = b;
-    }    
-    else
-    {   b = x;
-        x = y;
-        y = b % y;
+        y = x % y;
+    
     }
 }
 
@@ -33,19 +27,15 @@ int main()
 {
     int x;
     int y;
-    int b;
-    xD ( x, y);
+    
     std::cout << "Podaj dwie zmienne " << std::endl;
 
     std::cin >> x >> y;
-    
-    while () 
-    {
-     myFunc(x, y, b);   
-    }
+    xD ( x, y);
+    myFunc(x , y);
 
-    std::cout << "nwd to " << b <<std::endl;
+    std::cout << "nwd to " << y <<std::endl;
 
-    return 0;//btw zmieniłem adres zamieszkania
+    return 0;
 
 }
