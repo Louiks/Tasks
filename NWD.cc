@@ -1,41 +1,25 @@
 #include <iostream>
 
-void xD(int x, int y)
+
+void myFunc(int x, int y, int a)
 {
-    int c;
-    if (x > y)
-    {}
-    else 
+    if (x < y)
     {
-        c = x;
-        x = y;
-        y = c;
+        for(int a = x; y % a != 0; a--){}
+    }
+    else
+    {
+        for(int a = y; x % a != 0; a--){}
     }
 
-}    
-
-void myFunc(int x, int y)
-{
-    while (x % y != 0)
-    {
-        y = x % y;
-    
-    }
 }
 
 int main()
 {
-    int x;
-    int y;
-    
-    std::cout << "Podaj dwie zmienne " << std::endl;
-
-    std::cin >> x >> y;
-    xD ( x, y);
-    myFunc(x , y);
-
-    std::cout << "nwd to " << y <<std::endl;
+    int x, y, a;
+std::cin >> x >> y;
+myFunc(x,y,a);
+std::cout << a;
 
     return 0;
-
 }
