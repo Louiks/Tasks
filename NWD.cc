@@ -14,7 +14,7 @@ int main()
         a = x % y;
 
     }
-    std::cout << "NWD to " << y << std::endl;
+    std::cout << "NWD to jest " << y << std::endl;
 
     return 0;
 }
