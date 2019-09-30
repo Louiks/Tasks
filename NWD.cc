@@ -1,9 +1,32 @@
+//#include <iostream>
+//
+//
+//int main()
+//{
+//    int x, y, a;
+//    std::cin >> x >> y;
+//
+//    a = x % y;
+//    while (a != 0)
+//    {
+//        x = y;
+//        y = a;
+//        a = x % y;
+//
+//    }
+//    std::cout << "NWD to jest " << y << std::endl;
+//
+//    return 0;
+//
+//}
+
+
+
 #include <iostream>
 
-
-int main()
+void myFunc()
 {
-    int x, y, a;
+    int x, y , a;
     std::cin >> x >> y;
 
     a = x % y;
@@ -15,6 +38,10 @@ int main()
 
     }
     std::cout << "NWD to jest " << y << std::endl;
+}
+int main()
+{
+    myFunc();
 
     return 0;
 }
