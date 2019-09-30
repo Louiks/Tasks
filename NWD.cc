@@ -24,10 +24,9 @@
 
 #include <iostream>
 
-void myFunc()
+
+int myFunc(int x, int y, int a)
 {
-    int x, y , a;
-    std::cin >> x >> y;
 
     a = x % y;
     while (a != 0)
@@ -37,11 +36,15 @@ void myFunc()
         a = x % y;
 
     }
-    std::cout << "NWD to jest " << y << std::endl;
+    return y;
 }
+
 int main()
 {
-    myFunc();
+    int x, y, a;
+    std::cin >> x >> y;
+    std::cout << "NWD to jest " <<  myFunc(x, y, a) << std::endl;
+
 
     return 0;
 }
