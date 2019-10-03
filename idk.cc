@@ -6,8 +6,8 @@ void myFunc(int x, int y, int p)
     while (x != y)
     {
         z = x;
-        if(z % p != 0)
         {
+        if(z % p != 0)
             while(z > p)
             {
                 z = z - p;
